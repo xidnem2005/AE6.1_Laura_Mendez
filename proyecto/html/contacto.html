@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+</head>
+<body>
+    <header>
+        <div class="header-item">
+            <img src="/imagenes/Logo.png" alt="">
+            <h3>all <span class="color-logo">shoes</span></h3>
+        </div>
+        <nav class="menu-navegacion">
+            <a href="/index.html">inicio</a>
+            <a href="/html/sobre_nosotros.html">nosotros</a>
+            <a href="/html/curso.html">cursos</a>
+            <a href="/html/tienda.html">tienda</a>
+            <a href="/html/contacto.html">contacto</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo">contacto</h1>
+        <div class="main-container">
+            <div class="info-contacto">
+                <h2>¿tienes alguna duda?</h2>
+                <p><span>Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Reiciendis, aspernatur. 
+                    </span>
+                </p>
+                <p class="parrafo">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Repellat temporibus quam 
+                    voluptatem explicabo, voluptates molestiae 
+                    laborum. Quidem placeat neque exercitationem. 
+                    Praesentium ad maiores doloremque fugit cumque,
+                     atque explicabo corporis provident?
+                     Dicta aliquid illo, quos similique odit
+                     dolore, reprehenderit explicabo cumque a
+                     rchitecto consequuntur voluptatibus quisquam 
+                </p>
+                <h3 class="email">e-mail</h3>
+                <p class="correo">info@allshoes.es</p>
+                <h3>redes sociales:</h3>
+                <div class="imagenes">
+                        <img src="/imagenes/telegram-icon.png" id="telegram" alt="">
+                        <img src="/imagenes/whatsapp-logo.png" id="whatsapp" alt="">
+                        <img src="/imagenes/twitter-icon.png"  id="twitter" alt="">
+                        <img src="/imagenes/instagram-logo.png" id="instagram" alt="">
+                        <img src="/imagenes/facebook-icon.png" id="facebook" alt="">
+                        <img src="/imagenes/Logo.png" id="logo" alt="">
+                    </div>
+                </div>
+                <div class="formulario">
+                    <form name="formulario" action="/enviarformulario.php" method="post">
+                        <div class="nombre">
+                            <label for="nombre"></label>
+                            <input type="text" id="nombre" name="nombre" autocomplete="off" required
+                            size="80" placeholder="nombre">
+                        </div>
+                        <div class="correo">
+                            <label for="correo"></label>
+                            <input type="email" id="correo" name="email" required autocomplete="email"
+                            size="80" placeholder="correo (correo@email.com)">
+                        </div>
+                        <div class="telefono">
+                            <label for="telefono">
+                                <input type="tel" id="telefono" name="telefono" 
+                                placeholder="teléfono (+34 xxx xxx xxx)" size="80"/>
+                            </label>
+                        </div>
+                        <div class="tema">
+                            <label for="tema"></label>
+                            <select name="tema" id="tema">
+                                <option value="" selected="selected">tema</option>
+                                <option value="rebajas">rebajas</option>
+                                <option value="horario">horario</option>
+                                <option value="reservas">reservas</option>
+                                <option value="donde estamos">dónde estamos</option>
+                            </select>
+                        </div>
+                        <div class="mensaje">
+                            <label for="mensaje"></label>
+                            <textarea name="mensaje" id="mensaje" cols="40" rows="10" placeholder="mensaje"></textarea>
+                        </div>
+                        <div class="condiciones">
+                            <label for="condiciones"></label>
+                            <input type="checkbox" name="condiciones" id="condiciones" required>
+                            aceptar <a href="#">condiciones</a>
+                        </div>
+                        <input type="submit" id="boton-enviar" value="enviar">
+                    </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,237 @@
+header{
+    width: 100%;
+    height: 20%;
+    padding: 20px;
+    display: flex;
+    border: 2px solid black;
+    background-color: black;
+    margin-bottom: 20px;
+
+}
+
+.header-item{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h3{
+    text-transform: uppercase;
+    color: white;
+}
+
+.color-logo{
+    color: orange;
+}
+
+.header-item > img {
+    height: 40px;
+    width: 40px;
+    display: flex;
+}
+
+.menu-navegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.menu-navegacion > a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-navegacion :hover {
+    cursor: pointer;
+    color: grey;
+    background-color: rgb(230, 230, 230);
+    border-radius: 150px;
+    padding: 10px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid grey;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container > img{
+    width:95%;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+
+.main-container > .titulo-main{
+    color: white;
+    font-size: 50px;
+    width: 2%;
+    position: relative;
+    top: 150px;
+    right: 1100px;
+}
+
+.main-container-dos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.main-descripcion{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-descripcion p span {
+    width: 80%;
+    color: black;
+}
+
+
+.main-descripcion >  .boton-compra{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.main-descripcion >  .boton-compra:hover{
+    background-color: grey;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+
+.main-container-dos  .main-productos{
+    width:60%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+
+.main-productos > .articulo{
+    height: 200px;
+    width: 50%;
+    margin-bottom: 80px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+@media screen and (width < 850px) {
+    .header-item{
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    header{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main-container > img{
+        width:100%;
+        height: auto;
+    }
+
+    .main-container > .titulo-main{
+        color: white;
+        font-size: 30px;
+        width: 2%;
+        position: relative;
+        bottom: auto;
+        left: -650px;
+    }
+
+    .main-container-dos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+  .main-container-dos  .main-descripcion{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+ 
+   .main-container-dos .main-descripcion >  .boton-compra{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    
+    .main-container-dos > .main-productos{
+        width: 100%;
+        display:flex ;
+        justify-content: center;
+    }
+
+    .main-productos > .articulo {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        margin-right: 5px; 
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (width < 500px) {
+    .menu-navegacion{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-container > .titulo-main{
+        color: white;
+        font-size: 30px;
+        width: 2%;
+        position: relative;
+        left: -450px;
+    }
+
+}
+
