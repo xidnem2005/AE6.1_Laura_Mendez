@@ -8,7 +8,6 @@ main{
 .titulo-curso{
     width: 100%;
     height: 150px;
-    /* margin: 0 auto; */
     margin-bottom: 20px;
     border-bottom: 2px solid grey;
 
@@ -38,7 +37,6 @@ main{
     margin-top: 20px;
     margin-left: 20px;
     display: flex;
-    /* justify-content: space-between; */
 }
 
 
@@ -47,7 +45,6 @@ main{
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -69,7 +66,7 @@ main{
     background-color: grey;
     text-decoration: none;
 
-    /* text-align: center; */
+
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -80,9 +77,6 @@ main{
     justify-content:flex-end;
     flex-direction: column;
 
-
-    /* position: relative;
-    left: 350px; */
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -95,7 +89,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* justify-content: end; */
 }
 
 .main-diseño > img{
@@ -126,9 +119,6 @@ main{
     margin-bottom: 10px;
 }
 
-/* .contain-diseño > p{
-    text-align: center;
-} */
 
 .contain-diseño  >.boton-leer-mas{
     width: 30%;
@@ -147,68 +137,60 @@ main{
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
-    /* position: relative;
-    left: 350px; */
     
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
+/* Ahora haré uso de las media query para adaptar la página a los distintos tamaños */
 @media screen  and (width <850px) {
+    .main-cursos{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .contain-falsificaciones{
         flex-direction: column;
         width: 90%;
         height: auto;
     }   
-}
-
-@media screen and (width <850px) {
     .contain-falsificaciones > img{
         width: 90%;
         height: auto;
     }    
-}
-
-@media screen and (width <850px) {
     .info-falsificaciones{
         width: 90%;
         height: auto;
         justify-content: center;
         margin-top: 20px;
     }    
-}
-
-@media screen  and (width <850px) {
-    .contain-diseño{
-        flex-direction:column;
-        width: 90%;
-        height: auto;
-    }   
-}
-
-@media screen  and (width <850px) {
-    .contain-diseño , h1 , h2 , p{
-        width:100%;
-        height: auto;
-    }   
-}
-
-@media screen and (width < 850px) {
     .main-diseño{
         width: 90%;
         height: auto;
         display: flex;
         flex-direction: column; 
-        justify-content: center;
+        align-items: center;
+        margin-left: 25px;
     }    
-}
-
-@media screen and (width < 850px) {
     .main-diseño > img{
         width: 90%;
         height: auto;
         display: flex;
         flex-direction: column; 
     }    
+    .contain-diseño{
+        flex-direction:column;
+        width: 90%;
+        height: auto;
+    }   
+    .contain-diseño , h1 , h2 , p{
+        width:100%;
+        height: auto;
+    }   
 }
+
+
+
